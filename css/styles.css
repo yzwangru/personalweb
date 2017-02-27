@@ -4,3 +4,30 @@ body {
   background-color: #32CD32;
   font-family: 'Oxygen', sans-serif;
 }
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/005/08a/0f9/1aa0f7c.jpg') no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 10px 15px 10px 0;
+}
+
+#Rutgers-img {
+  background: url('https://nextgengolf.org/ruploads/team/logo/129/logo2.png') no-repeat;
+  width: 300px;
+  height:300px;
+  margin: -130px 15px 10px -130px;
+  transform:scale(0.1);
+    -ms-transform:scale(0.1); /* IE 9 */
+    -moz-transform:scale(0.1); /* Firefox */
+    -webkit-transform:scale(0.1); /* Safari and Chrome */
+    -o-transform:scale(0.1); /* Opera */
+    overflow: auto;
+}
+
