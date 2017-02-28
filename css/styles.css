@@ -67,12 +67,14 @@ body {
 
 #nav-list {
   margin-top: -80px;
-  font-size: 1.2em;
+  padding-right: 0px; 
+  margin-right: -105px;
+  font-size: 1.4em;
 
 }
 #nav-list a {
   color: #951C49;
-  text-align: center;
+  text-align: right;
 }
 #nav-list a:hover {
   background: #FF7435;
@@ -117,12 +119,12 @@ body {
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+/*@media (min-width: 768px) and (max-width: 991px) {
 
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
+/********** small and Extra small devices only **********/
+@media (max-width: 991px) {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -133,10 +135,15 @@ body {
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
   .degree { /* degree */
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: 12px;
   }
  
+ #nav-list
+ {
+ 	font-size:1.5vw;
+ 	margin-top:50px;
+ }
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -146,21 +153,50 @@ body {
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
   /* End Header */
 
 }
+
+#menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  #menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+
+
+
+

@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+
   </head>
 <body>
 <header>
@@ -39,50 +47,121 @@
         </div>
 
           <div id="collapsable-nav" class="collapse navbar-collapse">
+
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
               <a href="menu-categories.html">
-                <span></span><br class="hidden-xs"> Home</a>
+                <span></span><br class="hidden-s"> Home</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> About Me</a>
+                <span></span><br class="hidden-s"> About Me</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> Projects</a>
+                <span></span><br class="hidden-s"> Projects</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> Publications</a>
+                <span></span><br class="hidden-s"> Publications</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> News</a>
+                <span></span><br class="hidden-s"> News</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> Activity</a>
+                <span></span><br class="hidden-s"> Activity</a>
             </li>
             <li>
               <a href="#">
-                <span></span><br class="hidden-xs"> Contact</a>
+                <span></span><br class="hidden-s"> Contact</a>
             </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
 
 
-
-
-
-
-      </div>
-
-                  
-
+     </div>
     </nav>
-
   </header>
+<!---------------------------->
+
+
+
+<center>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="images/header/header1.jpg" style="width:70%">
+  <img class="mySlides" src="images/header/header2.jpg" style="width:70%">
+  <img class="mySlides" src="images/header/header3.jpg" style="width:70%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:70%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+</center>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+<!-------------------------------->
+
+
+<div id="home-tiles" class="row">
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-2 col-sm-12 col-xs-12">
+        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span>map</span>
+          </div>
+
+        </a>
+      </div>
+    </div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
