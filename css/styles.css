@@ -429,3 +429,21 @@ body {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
+
+
+
+
+/* background color alternateive in about me*/
+
+
+.even:nth-child(odd)
+{
+	background-color: #00994C;
+	font-size: 1.2em;
+}
+
+.even:nth-child(even)
+{
+	font-size: 1.2em;
+}
