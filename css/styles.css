@@ -251,7 +251,7 @@ body {
 
 
 
-  #aboutme-tile, #projects-tile, #publications-tile, #activity-tile, #map-tile, #project1-tile{
+  #aboutme-tile, #projects-tile, #publications-tile, #activity-tile, #map-tile{
   height: 255px;
   width: 80%;
   margin-bottom: 15px;
@@ -264,6 +264,19 @@ body {
   overflow: hidden;
 }
 
+ #project1-tile, #project2-tile, #project3-tile{
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: -50px;
+  margin-left: 15px;
+  margin-right: 20px;
+  padding-right: 20px;
+  position: relative;
+  text-align: center
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
 
 
 #me-tile{
@@ -294,8 +307,9 @@ body {
   overflow: hidden;
 }
 
-#aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover, #activity-tile:hover, #map-tile:hover
-，#project1-tile:hover, #me-tile:hover {
+#aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover,
+ #activity-tile:hover, #map-tile:hover
+,#project1-tile:hover, #me-tile:hover, #project2-tile: hover, #project3-tile: hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
@@ -349,6 +363,28 @@ body {
   background-size: 100% auto;
 }
 
+#project2-tile {
+  background: url('../images/project2.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
+
+#project3-tile {
+  background: url('../images/project3.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
+
+
+
 #me-tile {
   background: url('../images/yzwang.jpg') no-repeat;
   background-position: center;
@@ -361,7 +397,8 @@ body {
 
 
 
-#aboutme-tile span, #projects-tile span, #publications-tile span, #activity-tile span, #map-tile span, #me-tile span {
+#aboutme-tile span, #projects-tile span, #publications-tile span, #activity-tile span,
+#map-tile span, #me-tile span{
   position: absolute;
   bottom: 0;
   right: 0;
