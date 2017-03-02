@@ -254,6 +254,11 @@ body {
 #aboutme-tile {
   background: url('../images/aboutme.jpg') no-repeat;
   background-position: center;
+  -webkit-background-size: 160% auto;
+  -moz-background-size: 160% auto;
+  -ms-background-size: 160% auto;
+  -o-background-size: 160% auto;
+  background-size: 160% auto;
 }
 #publications-tile {
   background: url('../images/publications.jpg') no-repeat;
