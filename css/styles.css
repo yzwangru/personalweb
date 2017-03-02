@@ -221,8 +221,8 @@ body {
 
 
 
-  #menu-tile, #specials-tile, #map-tile {
-  height: 175px;
+  #aboutme-tile, #projects-tile, #publications-tile, #activity-tile, #map-tile {
+  height: 255px;
   width: 80%;
   margin-bottom: 15px;
   margin-left: 35px;
@@ -247,25 +247,46 @@ body {
   overflow: hidden;
 }
 
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+#aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover, #activity-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+#aboutme-tile {
+  background: url('../images/aboutme.jpg') no-repeat;
   background-position: center;
 }
-#specials-tile {
+#publications-tile {
   background: url('../images/publications.jpg') no-repeat;
   background-position: center;
-  -webkit-background-size: 123% auto;
-  -moz-background-size: 123% auto;
-  -ms-background-size: 123% auto;
-  -o-background-size: 123% auto;
-  background-size: 123% auto;
+  -webkit-background-size: 130% auto;
+  -moz-background-size: 130% auto;
+  -ms-background-size: 130% auto;
+  -o-background-size: 130% auto;
+  background-size: 130% auto;
 }
 
-#menu-tile span, #specials-tile span, #map-tile span {
+#projects-tile {
+  background: url('../images/projects.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 70% auto;
+  -moz-background-size: 70% auto;
+  -ms-background-size: 70% auto;
+  -o-background-size: 70% auto;
+  background-size: 123% auto;
+
+}
+
+#activity-tile {
+  background: url('../images/activity.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
+
+#aboutme-tile span, #projects-tile span, #publications-tile span, #activity-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
