@@ -145,6 +145,36 @@ body {
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+
+   /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* My name yazhong wang */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .degree { /* degree */
+    font-size: 2vw;
+    margin-top: 12px;
+  }
+ 
+ #nav-list
+ {
+ 	font-size:1.5vw;
+ 	margin-top:50px;
+ 	margin-right: 200px
+ 	
+ }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
 }
 
 /********** Small devices only **********/
@@ -221,7 +251,7 @@ body {
 
 
 
-  #aboutme-tile, #projects-tile, #publications-tile, #activity-tile, #map-tile {
+  #aboutme-tile, #projects-tile, #publications-tile, #activity-tile, #map-tile, #project1-tile{
   height: 255px;
   width: 80%;
   margin-bottom: 15px;
@@ -233,6 +263,23 @@ body {
   border: 2px solid #3F0C1F;
   overflow: hidden;
 }
+
+
+
+#me-tile{
+  height: 500px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  position: relative;
+  text-align: center
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+ 
 
   #map-tile2 {
   height: 470px;
@@ -247,7 +294,8 @@ body {
   overflow: hidden;
 }
 
-#aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover, #activity-tile:hover, #map-tile:hover {
+#aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover, #activity-tile:hover, #map-tile:hover
+，#project1-tile:hover, #me-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
@@ -291,7 +339,29 @@ body {
   background-size: 100% auto;
 }
 
-#aboutme-tile span, #projects-tile span, #publications-tile span, #activity-tile span, #map-tile span {
+#project1-tile {
+  background: url('../images/multimodal.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
+
+#me-tile {
+  background: url('../images/yzwang.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+
+
+#aboutme-tile span, #projects-tile span, #publications-tile span, #activity-tile span, #map-tile span, #me-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
