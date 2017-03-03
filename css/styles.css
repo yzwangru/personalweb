@@ -264,7 +264,7 @@ body {
   overflow: hidden;
 }
 
- #project1-tile, #project2-tile, #project3-tile{
+ #project1-tile, #project2-tile, #project3-tile, #project4-tile, #project5-tile, #project6-tile{
   height: 350px;
   width: 100%;
   margin-bottom: 0px;
@@ -309,7 +309,8 @@ body {
 
 #aboutme-tile:hover, #projects-tile:hover, #publications-tile:hover,
  #activity-tile:hover, #map-tile:hover
-,#project1-tile:hover, #me-tile:hover, #project2-tile: hover, #project3-tile: hover {
+,#project1-tile:hover, #me-tile:hover, #project2-tile: hover, #project3-tile: hover,
+#project4-tile:hover, #project5-tile:hover, #project6-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
@@ -383,6 +384,35 @@ body {
   background-size: 100% auto;
 }
 
+#project4-tile {
+  background: url('../images/project4.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 50% auto;
+  -moz-background-size: 50% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
+
+#project5-tile {
+  background: url('../images/project5.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 120% auto;
+  -moz-background-size: 120% auto;
+  -ms-background-size: 120% auto;
+  -o-background-size: 120% auto;
+  background-size: 100% auto;
+}
+
+#project6-tile {
+  background: url('../images/project6.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: 180% auto;
+  -moz-background-size: 180% auto;
+  -ms-background-size: 50% auto;
+  -o-background-size: 50% auto;
+  background-size: 100% auto;
+}
 
 
 #me-tile {
